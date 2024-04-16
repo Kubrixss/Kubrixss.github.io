@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("posts");
+---
+
+<Layout title="Blog">
+  <h1>Blog</h1>
+  {
+    allPosts.map((post) => (
+      <div id="posts">
+        <div id="card">
+          <img src={post.data.image.url} alt={post.data.title} />
+          <h2>{post.data.title}</h2>
+        </div>
+      </div>
+    ))
+  }
+</Layout>
+
+<style>
+  #posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  #card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+  }
+</style>
