@@ -90,6 +90,7 @@ content:
         label: Genres
         description: The genres of the project
         type: text
+        list: true
       - name: screenshots
         label: Screenshots
         description: The screenshots of the portfolio item
