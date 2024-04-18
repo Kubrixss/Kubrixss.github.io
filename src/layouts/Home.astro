@@ -1,6 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("portfolio");
+// check all posts for the roles field and if it is undefined or empty, set it to an empty array
+allPosts.forEach((post) => {
+  if (!post.data.roles) {
+    post.data.roles = [];
+  }
+});
 ---
 
 <div id="container">
