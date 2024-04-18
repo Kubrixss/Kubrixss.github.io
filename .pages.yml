@@ -96,6 +96,10 @@ content:
         label: Engine
         description: The engine used for the project
         type: text
+      - name: platform
+        label: Platform
+        description: The platform of the project
+        type: text
       - name: genre
         label: Genres
         description: The genres of the project
