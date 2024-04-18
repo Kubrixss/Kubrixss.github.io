@@ -23,8 +23,8 @@ const allPosts = await getCollection("portfolio");
           )}
           <h2>{post.data.title}</h2>
           <p>
-            {/* Check if roles are defined and display accordingly */}
-            {post.data.roles?.length
+            {/* Check if roles are defined and are an array before joining */}
+            {post.data.roles && Array.isArray(post.data.roles)
               ? `Roles: ${post.data.roles.join(", ")}`
               : "Role not specified"}
           </p>
