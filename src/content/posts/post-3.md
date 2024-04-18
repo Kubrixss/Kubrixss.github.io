@@ -1,11 +1,11 @@
 ---
-title: "Third Blog Post"
 pubDate: 2024-04-16
-description: "This is a sample blog post"
-author: "tylerguy"
+title: Third Blog Post
+author: tylerguy
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
+  url: https://docs.astro.build/assets/full-logo-light.png
+  alt: The full Astro logo.
+  image: public/favicon.svg
 ---
 Published on: 2024-04-16
 
