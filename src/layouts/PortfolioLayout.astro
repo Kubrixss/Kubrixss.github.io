@@ -7,6 +7,11 @@ if (!frontmatter.trailer) {
   // transform trailer url from https://youtube.com/watch?v=... to https://www.youtube.com/embed/...
   frontmatter.trailer = frontmatter.trailer.replace("watch?v=", "embed/");
 }
+if (!frontmatter.roles) {
+  frontmatter.roles = ["Unknown"];
+} else {
+  frontmatter.roles = frontmatter.roles.split(",");
+}
 ---
 
 <Layout title={frontmatter.title}>
@@ -30,7 +35,7 @@ if (!frontmatter.trailer) {
     </div>
     <div id="roles">
       <p id="heading">Roles</p>
-      {frontmatter.roles.map((role) => <p>{role}</p>)}{" "}
+      <p>{frontmatter.roles}</p>
     </div>
     <div id="platform">
       <p id="heading">Platform</p>
