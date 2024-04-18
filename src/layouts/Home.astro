@@ -6,7 +6,6 @@ const allPosts = await getCollection("portfolio");
 <div id="container">
   <h1>Projects</h1>
   <div id="projects">
-    <!-- Loop through all posts -->
     {
       allPosts.map((post) => (
         <div
@@ -14,20 +13,21 @@ const allPosts = await getCollection("portfolio");
           onclick={`location.href='/portfolio/${post.slug}'`}
           style="cursor: pointer;"
         >
-          {() => {
-            if (!post.data.image) {
-              return (
-                <img
-                  src="https://via.placeholder.com/300"
-                  alt="Placeholder image"
-                />
-              );
-            } else {
-              <img src={post.data.image.url} alt={post.data.image.alt} />;
-            }
-          }}
+          {post.data.image ? (
+            <img src={post.data.image.url} alt={post.data.image.alt} />
+          ) : (
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Placeholder image"
+            />
+          )}
           <h2>{post.data.title}</h2>
-          <p>Roles: {post.data?.roles?.join(", ") || "Role not specified"}</p>
+          <p>
+            {/* Check if roles are defined and display accordingly */}
+            {post.data.roles?.length
+              ? `Roles: ${post.data.roles.join(", ")}`
+              : "Role not specified"}
+          </p>
           <p>{post.data.description}</p>
         </div>
       ))
@@ -64,6 +64,7 @@ const allPosts = await getCollection("portfolio");
     scale: 1.1;
     transition: 0.3s;
   }
+
   img {
     width: 100%;
     border-radius: 5px;
