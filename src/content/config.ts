@@ -17,26 +17,27 @@ const postsCollection = defineCollection({
 
 const portfolioCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string(),
-    }),
-    date_created: z.date(),
-    link: z.string(),
-    roles: z.array(z.string()),
-    genre: z.array(z.string()),
-    platform: z.string(),
-    engine: z.string(),
-    screenshots: z.array(
-      z.object({
-        url: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string(),
+      image: z.object({
+        url: image(),
         alt: z.string(),
-      })
-    ),
-  }),
+      }),
+      date_created: z.date(),
+      link: z.string(),
+      roles: z.array(z.string()),
+      genre: z.array(z.string()),
+      platform: z.string(),
+      engine: z.string(),
+      screenshots: z.array(
+        z.object({
+          url: image(),
+          alt: z.string(),
+        })
+      ),
+    }),
 });
 
 export const colletions = {
