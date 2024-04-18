@@ -12,6 +12,9 @@ if (!frontmatter.roles) {
 } else {
   frontmatter.roles = frontmatter.roles.split(",");
 }
+if (!frontmatter.screenshots) {
+  frontmatter.screenshots = [];
+}
 ---
 
 <Layout title={frontmatter.title}>
