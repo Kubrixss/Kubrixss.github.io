@@ -32,7 +32,7 @@ content:
             type: image
             options:
               input: public
-              output: ./
+              output: .
               path: public
           - name: alt
             label: Alt
