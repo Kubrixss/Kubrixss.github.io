@@ -3,7 +3,7 @@ pubDate: 2024-04-16
 title: Third Blog Post
 author: tylerguy
 image:
-  url: https://docs.astro.build/assets/full-logo-light.png
+  url: .//favicon.svg
   alt: The full Astro logo.
 ---
 Published on: 2024-04-16
