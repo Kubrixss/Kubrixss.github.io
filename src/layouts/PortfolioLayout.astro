@@ -13,7 +13,27 @@ if (!frontmatter.roles) {
   frontmatter.roles = frontmatter.roles.join(",");
 }
 if (!frontmatter.screenshots) {
-  frontmatter.screenshots = [];
+  frontmatter.screenshots = [
+    {
+      url: "https://via.placeholder.com/400",
+      alt: "Placeholder",
+      description: "Placeholder",
+    },
+    {
+      url: "https://via.placeholder.com/400",
+      alt: "Placeholder",
+      description: "Placeholder",
+    },
+  ];
+}
+if (!frontmatter.platform) {
+  frontmatter.platform = "Unknown";
+}
+if (!frontmatter.engine) {
+  frontmatter.engine = "Unknown";
+}
+if (!frontmatter.link) {
+  frontmatter.link = "#";
 }
 ---
 
