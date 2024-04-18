@@ -121,7 +121,7 @@ content:
   - name: about
     label: About
     path: src/content/about
-    type: single
+    type: file
     fields:
       - name: title
         label: Title
