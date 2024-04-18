@@ -1,6 +1,15 @@
 ---
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("portfolio");
+
+allPosts.map((post) => {
+  if (!post.data.image.url) {
+    post.data.image.url = "/images/placeholder.png";
+    post.data.image.alt = "Placeholder image";
+    post.data.roles = ["No roles"];
+  }
+  return post;
+});
 ---
 
 <div id="container">
