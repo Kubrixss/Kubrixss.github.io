@@ -120,7 +120,7 @@ content:
             type: text
   - name: about
     label: About
-    path: src/content/about
+    path: src/content/about/about.md
     type: file
     fields:
       - name: title
