@@ -1,6 +1,9 @@
 ---
 const { frontmatter } = Astro.props;
 import Layout from "./Layout.astro";
+if (!frontmatter.roles) {
+  frontmatter.roles = ["No roles specified"];
+}
 if (!frontmatter.trailer) {
   frontmatter.trailer = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 } else {
