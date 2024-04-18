@@ -1,3 +1,71 @@
 ---
-
+import { getCollection } from "astro:content";
+const allPosts = await getCollection("portfolio");
 ---
+
+<div id="container">
+  <h1>Projects</h1>
+  <div id="projects">
+    <!-- Loop through all posts -->
+    {
+      allPosts.map((post) => (
+        <div
+          id="card"
+          onclick={`location.href='/portfolio/${post.slug}'`}
+          style="cursor: pointer;"
+        >
+          <img src={post.data.image.url} alt={post.data.image.alt} />
+          <h2>{post.data.title}</h2>
+          <p>{post.data.roles.join(", ")}</p>
+          <p>{post.data.description}</p>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  #container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  #projects {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    margin: 0px 200px 0 200px;
+    padding: 20px;
+  }
+
+  #card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+  }
+
+  #card:hover {
+    scale: 1.1;
+    transition: 0.3s;
+  }
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+  }
+</style>
