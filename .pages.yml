@@ -141,7 +141,7 @@ content:
             label: Skill
             description: The skill of the about page
             type: text
-      - name: Eductation
+      - name: Education
         label: Education
         description: The education of the about page
         type: text
