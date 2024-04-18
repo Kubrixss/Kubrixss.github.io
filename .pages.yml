@@ -91,6 +91,11 @@ content:
         description: The genres of the project
         type: text
         list: true
+        fields:
+          - name: genre
+            label: Genre
+            description: The genre of the project
+            type: text
       - name: screenshots
         label: Screenshots
         description: The screenshots of the portfolio item
