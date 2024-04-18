@@ -28,10 +28,10 @@ const allPosts = await getCollection("portfolio");
           }}
           <h2>{post.data.title}</h2>
           {() => {
-            if (post.data.roles) {
-              return <p>{post.data.roles.join(", ")}</p>;
+            if (!post.data.roles) {
+              return <p>Role not specified</p>;
             } else {
-              return <p>{post.data.roles}</p>;
+              return <p>{post.data.roles.join(", ")}</p>;
             }
           }}
           <p>{post.data.description}</p>
