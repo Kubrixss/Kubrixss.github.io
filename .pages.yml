@@ -51,6 +51,45 @@ content:
         label: Body
         description: The body of the portfolio item
         type: text
+      - name: date_created
+        label: Date Created
+        description: The date the portfolio item was created
+        type: date
+      - name: image
+        label: Image
+        description: The image of the portfolio item
+        type: object
+        fields:
+          - name: url
+            label: Source
+            description: The source of the image
+            type: text
+          - name: alt
+            label: Alt
+            description: The alt text of the image
+            type: text
+      - name: link
+        label: Link
+        description: The link where the portfolio item can be found
+        type: text
+      - name: roles
+        label: Roles
+        description: The roles you had during the project
+        type: object
+        list: true
+        fields:
+          - name: role
+            label: Role
+            description: The role you had during the project
+            type: text
+      - name: engine
+        label: Engine
+        description: The engine used for the project
+        type: text
+      - name: genre
+        label: Genres
+        description: The genres of the project
+        type: text
       - name: screenshots
         label: Screenshots
         description: The screenshots of the portfolio item
