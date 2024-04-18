@@ -31,8 +31,8 @@ content:
             description: The source of the image
             type: image
             options:
-              input: public
-              output: /
+              input: public/posts
+              output: /posts
               path: public
           - name: alt
             label: Alt
