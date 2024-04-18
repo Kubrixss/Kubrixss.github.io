@@ -6,36 +6,37 @@ const allPosts = await getCollection("posts");
 
 <Layout title="Blog">
   <h1>Blog</h1>
-  {
-    allPosts.map((post) => (
-      <div id="posts">
+  <div id="posts">
+    {
+      allPosts.map((post) => (
         <div id="card">
           <img src={post.data.image.url} alt={post.data.title} />
           <h2>{post.data.title}</h2>
         </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </Layout>
 
 <style>
   #posts {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    margin: 0px 200px 0 200px;
+    padding: 20px;
   }
   #card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     margin-bottom: 20px;
+    border: 3px solid #fff;
   }
   img {
-    display: block;
-    width: 100%;
     max-width: 300px;
     border-radius: 10px;
+    fill
+    aspect-ratio: 1 / 1;
   }
 
   h2 {
@@ -43,5 +44,10 @@ const allPosts = await getCollection("posts");
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
   }
 </style>

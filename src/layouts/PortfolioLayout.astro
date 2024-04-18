@@ -1,0 +1,133 @@
+---
+const { frontmatter } = Astro.props;
+import Layout from "./Layout.astro";
+// transform trailer url from https://youtube.com/watch?v=... to https://www.youtube.com/embed/...
+frontmatter.trailer = frontmatter.trailer.replace("watch?v=", "embed/");
+---
+
+<Layout title={frontmatter.title}>
+  <div class="header">
+    <h1>{frontmatter.title}</h1>
+    <iframe
+      width="560"
+      height="315"
+      src={frontmatter.trailer}
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+    <div class="content">
+      <div id="date">
+        <p id="heading">Date created</p>
+        <p>{frontmatter.date_created}</p>
+      </div>
+      <div id="roles">
+        <p id="heading">Roles</p>
+        <!-- parse the roles array -->
+        {frontmatter.roles.map((role) => <p>{role}</p>)}
+      </div>
+      <div id="platform">
+        <p id="heading">Platform</p>
+        <p>{frontmatter.platform}</p>
+      </div>
+      <div id="engine">
+        <p id="heading">Engine</p>
+        <p>{frontmatter.engine}</p>
+      </div>
+    </div>
+    <h2>Description</h2>
+
+    <slot />
+    <!-- add a line seperator -->
+    <hr />
+    <div id="gallery">
+      <h2>Screenshots</h2>
+      <!-- parse the screenshots array -->
+      <div id="screenshots">
+        {
+          frontmatter.screenshots.map((screenshot) => (
+            <div id="screenshot">
+              <img src={screenshot.url} alt={screenshot.alt} />
+              <p>{screenshot.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <hr id="end" />
+
+  <style>
+    .header {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    h1 {
+      margin: 0;
+      padding-bottom: 20px;
+    }
+    h3 {
+      margin: 0;
+      color: white;
+    }
+    .content {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+    .content div {
+      padding: 1rem;
+      background-color: #ffffff43;
+      margin: 0.5rem;
+      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.34);
+    }
+    #date {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    p {
+      margin: 0;
+    }
+    #heading {
+      font-weight: bold;
+    }
+
+    hr {
+      margin-top: 2rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+      border: 0;
+      border-top: 1px solid #ccc;
+    }
+    #gallery {
+      margin-top: 2rem;
+    }
+
+    #screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 1rem;
+      margin: 0 5rem;
+    }
+
+    #screenshot {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    #end {
+      margin-bottom: 2rem;
+    }
+  </style>
+</Layout>

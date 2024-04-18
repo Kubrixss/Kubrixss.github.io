@@ -1,10 +1,10 @@
 ---
-title: "First Blog Post"
+title: "Fourth Blog Post"
 pubDate: 2024-04-16
 description: "This is a sample blog post"
 author: "tylerguy"
 image:
-    url: 'https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640'
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
     alt: 'The full Astro logo.'
 ---
 Published on: 2024-04-16
