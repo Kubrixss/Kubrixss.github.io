@@ -1,0 +1,35 @@
+media: files/public
+content:
+  - name: posts
+    label: Posts
+    path: src/content/posts
+    type: collection
+    fields:
+      - name: pubDate
+        label: Published Date
+        description: The date the post was published
+        type: date
+      - name: title
+        label: Title
+        description: The title of the post
+        type: text
+      - name: body
+        label: Body
+        description: The body of the post
+        type: text
+      - name: author
+        label: Author
+        description: The author of the post
+        type: text
+      - name: image
+        label: Image
+        description: The image of the post
+        type: object
+        - name: src
+          label: Source
+          description: The source of the image
+          type: text
+        - name: alt
+          label: Alt
+          description: The alt text of the image
+          type: text
