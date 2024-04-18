@@ -6,6 +6,19 @@ import Layout from "./Layout.astro";
 <Layout title={frontmatter.title}>
   <h1>{frontmatter.title}</h1>
   <p>Written by {frontmatter.author}</p>
-  <p>Pub{frontmatter.pubDate}</p>
+  <hr />
   <slot />
+  <br />
 </Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  hr {
+    margin: 2rem 0;
+  }
+</style>

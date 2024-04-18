@@ -10,7 +10,11 @@ const allPosts = await getCollection("posts");
   <div id="posts">
     {
       allPosts.map((post) => (
-        <div id="card">
+        <div
+          id="card"
+          onclick={`location.href='/posts/${post.slug}'`}
+          style="cursor: pointer;"
+        >
           <img src={post.data.image.url} alt={post.data.image.alt} />
           <h2>{post.data.title}</h2>
         </div>
