@@ -75,7 +75,7 @@ content:
       - name: roles
         label: Roles
         description: The roles you had during the project
-        type: object
+        type: text
         list: true
         fields:
           - name: role
