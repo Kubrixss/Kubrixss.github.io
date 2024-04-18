@@ -1,15 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("portfolio");
-
-allPosts.map((post) => {
-  if (!post.data.image.url) {
-    post.data.image.url = "https://via.placeholder.com/300";
-    post.data.image.alt = "Placeholder image";
-    post.data.roles = ["No roles"];
-  }
-  return post;
-});
 ---
 
 <div id="container">
@@ -23,9 +14,26 @@ allPosts.map((post) => {
           onclick={`location.href='/portfolio/${post.slug}'`}
           style="cursor: pointer;"
         >
-          <img src={post.data.image.url} alt={post.data.image.alt} />
+          {() => {
+            if (!post.data.image) {
+              return (
+                <img
+                  src="https://via.placeholder.com/300"
+                  alt="Placeholder image"
+                />
+              );
+            } else {
+              <img src={post.data.image.url} alt={post.data.image.alt} />;
+            }
+          }}
           <h2>{post.data.title}</h2>
-          <p>{post.data.roles.join(", ")}</p>
+          {() => {
+            if (post.data.roles.length > 1) {
+              return <p>{post.data.roles.join(", ")}</p>;
+            } else {
+              return <p>{post.data.roles}</p>;
+            }
+          }}
           <p>{post.data.description}</p>
         </div>
       ))
