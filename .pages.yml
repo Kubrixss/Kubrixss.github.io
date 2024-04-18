@@ -25,11 +25,12 @@ content:
         label: Image
         description: The image of the post
         type: object
-        - name: src
-          label: Source
-          description: The source of the image
-          type: text
-        - name: alt
-          label: Alt
-          description: The alt text of the image
-          type: text
+        fields:
+          - name: src
+            label: Source
+            description: The source of the image
+            type: text
+          - name: alt
+            label: Alt
+            description: The alt text of the image
+            type: text
