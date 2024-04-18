@@ -1,0 +1,67 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div id="header">
+  <h1>{title}</h1>
+  <div id="nav">
+    <ul>
+      <li><a href="/"> Home</a></li>
+      <li><a href="/about">About </a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </div>
+
+  <style>
+    h1 {
+      color: white;
+    }
+
+    #header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      display: block;
+    }
+
+    #nav {
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      background-color: #444;
+      margin: 0;
+      padding: 10px;
+      list-style-type: none;
+      justify-content: center;
+    }
+
+    #nav ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    #nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+    }
+
+    #nav a:hover {
+      background-color: #555;
+    }
+
+    #nav a:active {
+      background-color: red;
+    }
+
+    #nav li {
+      list-style-type: none;
+    }
+  </style>
+</div>
