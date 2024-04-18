@@ -3,7 +3,7 @@ pubDate: 2024-04-16
 title: Third Blog Post
 author: tylerguy
 image:
-  url: //Tyler Logo Redesign Concept V3.png
+  url: /posts/Tyler Logo Redesign Concept V3.png
   alt: The full Astro logo.
 ---
 Published on: 2024-04-16
