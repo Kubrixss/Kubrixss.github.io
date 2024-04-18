@@ -82,6 +82,10 @@ content:
         label: Link
         description: The link where the portfolio item can be found
         type: text
+      - name: trailer
+        label: Trailer
+        description: Trailer Link
+        type: text
       - name: roles
         label: Roles
         description: The roles you had during the project
