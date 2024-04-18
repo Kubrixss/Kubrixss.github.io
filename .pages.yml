@@ -54,7 +54,7 @@ content:
       - name: screenshots
         label: Screenshots
         description: The screenshots of the portfolio item
-        type: list
+        type: object
         list: true
         fields:
           - name: url
