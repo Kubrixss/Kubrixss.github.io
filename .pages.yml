@@ -26,10 +26,14 @@ content:
         description: The image of the post
         type: object
         fields:
-          - name: url
+          - name: image
             label: Source
             description: The source of the image
-            type: text
+            type: image
+            options:
+              input: public
+              output: public
+              path: public
           - name: alt
             label: Alt
             description: The alt text of the image
