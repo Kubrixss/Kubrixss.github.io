@@ -1,9 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
 import Layout from "./Layout.astro";
-if (!frontmatter.roles) {
-  frontmatter.roles = ["No roles specified", "No roles specified"];
-}
 if (!frontmatter.trailer) {
   frontmatter.trailer = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 } else {
@@ -33,8 +30,7 @@ if (!frontmatter.trailer) {
     </div>
     <div id="roles">
       <p id="heading">Roles</p>
-      <!-- parse the roles array -->
-      {frontmatter.roles.map((role) => <p>{role}</p>)}
+      {frontmatter.roles.map((role) => <p>{role}</p>)}{" "}
     </div>
     <div id="platform">
       <p id="heading">Platform</p>
