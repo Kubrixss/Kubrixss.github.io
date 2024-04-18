@@ -4,7 +4,7 @@ const allPosts = await getCollection("portfolio");
 
 allPosts.map((post) => {
   if (!post.data.image.url) {
-    post.data.image.url = "/images/placeholder.png";
+    post.data.image.url = "https://via.placeholder.com/300";
     post.data.image.alt = "Placeholder image";
     post.data.roles = ["No roles"];
   }
