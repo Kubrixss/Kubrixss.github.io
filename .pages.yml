@@ -34,3 +34,38 @@ content:
             label: Alt
             description: The alt text of the image
             type: text
+  - name: portfolio
+    label: Portfolio
+    path: src/content/portfolio
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        description: The title of the portfolio item
+        type: text
+      - name: description
+        label: Description
+        description: The description of the portfolio item
+        type: text
+      - name: body
+        label: Body
+        description: The body of the portfolio item
+        type: text
+      - name: screenshots
+        label: Screenshots
+        description: The screenshots of the portfolio item
+        type: list
+        list: true
+        fields:
+          - name: url
+            label: Source
+            description: The source of the screenshot
+            type: text
+          - name: alt
+            label: Alt
+            description: The alt text of the screenshot
+            type: text
+          - name: description
+            label: Description
+            description: The description of the screenshot
+            type: text
