@@ -28,7 +28,7 @@ const allPosts = await getCollection("portfolio");
           }}
           <h2>{post.data.title}</h2>
           {() => {
-            if (post.data.roles.length > 1) {
+            if (post.data.roles) {
               return <p>{post.data.roles.join(", ")}</p>;
             } else {
               return <p>{post.data.roles}</p>;
