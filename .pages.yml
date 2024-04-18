@@ -118,3 +118,30 @@ content:
             label: Description
             description: The description of the screenshot
             type: text
+  - name: about
+    label: About
+    path: src/content/about
+    type: single
+    fields:
+      - name: title
+        label: Title
+        description: The title of the about page
+        type: text
+      - name: body
+        label: Body
+        description: The body of the about page
+        type: text
+      - name: skills
+        label: Skills
+        description: The skills of the about page
+        type: text
+        list: true
+        fields:
+          - name: skill
+            label: Skill
+            description: The skill of the about page
+            type: text
+      - name: Eductation
+        label: Education
+        description: The education of the about page
+        type: text
