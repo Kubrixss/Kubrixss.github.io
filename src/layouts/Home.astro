@@ -27,7 +27,6 @@ const allPosts = await getCollection("portfolio");
             }
           }}
           <h2>{post.data.title}</h2>
-          <p>{post.data.roles.join(", ")}</p>
           <p>{post.data.description}</p>
         </div>
       ))
