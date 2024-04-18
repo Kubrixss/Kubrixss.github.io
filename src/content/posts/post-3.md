@@ -5,7 +5,6 @@ author: tylerguy
 image:
   url: https://docs.astro.build/assets/full-logo-light.png
   alt: The full Astro logo.
-  image: public/favicon.svg
 ---
 Published on: 2024-04-16
 
