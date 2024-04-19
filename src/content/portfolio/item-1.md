@@ -34,5 +34,8 @@ screenshots:
   - url: /portfolio/Level2 Win.png
     alt: Level 2 - Wine Cellar
     description: Level 2 - Wine Cellar
+  - url: /portfolio/Level2 - Plush.png
+    alt: Level 2 - Collectible Plush
+    description: Level 2 - Collectible Plush
 ---
 Scary and Spooky
