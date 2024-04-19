@@ -89,7 +89,7 @@ content:
       - name: roles
         label: Roles
         description: The roles you had during the project
-        type: text
+        type: object
         list: true
         fields:
           - name: role
@@ -107,7 +107,7 @@ content:
       - name: genre
         label: Genres
         description: The genres of the project
-        type: text
+        type: object
         list: true
         fields:
           - name: genre
