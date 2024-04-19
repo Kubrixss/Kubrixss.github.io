@@ -6,7 +6,11 @@ skills:
   - Unity
   - Photoshop
   - Blender
+  - Maya
   - Substance Painter
+  - 3DsMax
+  - HackNPlan
+  - GitHub
 Education: "GCSEs in Polish, Mathematics, Combined Science: Trilogy Geography,
   English Language"
 ---
