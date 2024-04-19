@@ -5,7 +5,7 @@ date_created: 2023-12-13
 image:
   url: /portfolio/PenguinImage.png
   alt: Penguin Monster From The Game.
-link: https://tylerguy.itch.io/
+link: https://kubrixss.itch.io/penguin-game?secret=4nrXOTwLNVN77kcZd3Wynv7nyA
 trailer: https://www.youtube.com/watch?v=9bZkp7q19f0
 roles:
   - Game Design
@@ -16,14 +16,17 @@ genre:
   - Horror
   - Singleplayer
 screenshots:
-  - url: https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640
-    alt: The full Astro logo.
-    description: This is a sample screenshot description.
-  - url: https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640
-    alt: The full Astro logo.
-    description: This is a sample screenshot description.
-  - url: https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640
-    alt: The full Astro logo.
-    description: This is a sample screenshot description.
+  - url: /portfolio/Menu.png
+    alt: Menu
+    description: Menu
+  - url: /portfolio/Penguin.png
+    alt: Level 1 - Penguin Chase
+    description: Level 1 - Penguin Chase
+  - url: /portfolio/Level1 Bedroom.png
+    alt: Level 1 - Bedroom
+    description: Level 1 - Bedroom
+  - url: /portfolio/Level1 Lib.png
+    alt: Level 1 - Library
+    description: Level 1 - Library
 ---
 Scary and Spooky
