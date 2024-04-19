@@ -1,18 +1,17 @@
 ---
-title: "First Blog Post"
 pubDate: 16-04-2024
-description: "This is a sample blog post"
-author: "tylerguy"
+title: First Blog Post
+author: Jakub M
 image:
-    url: './flower.webm'
-    alt: 'The full Astro logo.'
+  url: /posts/Bingus_Hi.png
+  alt: Hi!
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel maximus augue. Mauris pretium sem nec turpis auctor, et scelerisque nibh tristique. Morbi vehicula commodo eros, ut tincidunt purus dapibus eget. Donec dapibus venenatis risus venenatis fringilla. Aliquam et dui vel enim eleifend dignissim vitae eu dolor. Nullam malesuada iaculis ipsum id posuere. Praesent dolor felis, faucibus eu bibendum sit amet, fermentum non tortor. Curabitur sit amet augue nec nulla scelerisque bibendum vel id nisi. Donec nec massa ac magna fermentum pulvinar. Phasellus elementum magna magna, at porttitor turpis ultrices sit amet.
+In the first week of making the FMP the most important part is the documentation of everything. In the first week I have focused on making the GDD, Risk Management and Planning. All of these documents are extremely important to making the actual game as they will help me manage and make the whole process easier.
 
-Etiam volutpat, nulla eget euismod vehicula, sem est scelerisque eros, ac commodo elit libero vitae erat. Maecenas venenatis, quam ut tincidunt mollis, mauris velit suscipit velit, in convallis tellus nisi nec velit. Suspendisse bibendum, sapien consequat bibendum dignissim, ante augue gravida leo, vitae pharetra lacus sapien vitae turpis. Nulla eu vehicula massa. Praesent egestas, est sed fringilla tincidunt, lectus arcu euismod sem, nec posuere nisl leo vel dui. Phasellus tempus vel est ut ultrices. Nunc tincidunt eleifend risus sit amet consectetur. Proin id erat eu velit pellentesque euismod. Proin a magna odio.
+Firstly I have written some of the GDD so that I have a general idea of what type of game I want to make and that I have a basis of things in which I can put into the risks and planning documents. I spent quite a lot of the time making the GDD and making sure all the ideas are solid and would work. As this document will be one of the most important as that's where the whole idea and the game will be written in.
 
-Nam vitae felis vel sem viverra varius. Quisque aliquam, sem sit amet dictum maximus, est magna ultrices magna, sit amet pulvinar magna erat ut mi. Maecenas bibendum justo quis elit venenatis eleifend. Nullam orci libero, lacinia vitae sodales id, venenatis non massa. Curabitur sem lacus, feugiat ut risus sed, tincidunt bibendum justo. Nullam nec diam eget dui dictum vehicula non vel nulla. Donec sem nisi, ultrices at augue sed, feugiat fringilla arcu. Suspendisse potenti.
+The next document I started making was the Planning trying to plan out in which order I would make my game to make the whole process of making it smoother instead of doing anything at any time without any thought. This document would also allow me to think of how long certain things should take me and take my time into confederation to have a successful game where it's not rushed and everything is planned out.
 
-Quisque vulputate erat vel lobortis bibendum. Praesent vel magna gravida, euismod nisi sed, tincidunt ligula. Duis eget neque at orci porttitor pretium non ac nibh. Aliquam nec dictum nibh, in vestibulum metus. Curabitur eget urna interdum, dignissim dui sed, tristique augue. Etiam bibendum tellus ut magna venenatis consequat. Nam nec orci quam. Praesent sodales ex ut arcu ultricies varius. Nulla facilisi.
+The last document in which I worked on was Risk Management in which I named all the risks that can happen with my game and work where if something did go wrong I had a backup plan in which I can put into action so that no work is lost and I didnt have to go behind schedule. All of these documents are there to make the whole process of when I will start making the game smoother and better in which I should have the least issues possible when doing so. Planning stage is extremely important as it will bring me to the end with a smooth journey.
 
-Donec ut augue porta, volutpat diam et, mattis eros. Proin et sem a orci commodo porttitor vitae quis neque. Donec vulputate semper posuere. Morbi maximus faucibus metus ac bibendum. Suspendisse pretium lacus quis enim euismod bibendum. Sed dictum tortor nec tortor venenatis hendrerit. Curabitur at elit auctor, porttitor metus at, tempor mauris. Proin gravida sagittis odio venenatis pretium. Nunc lacinia enim at ex rhoncus sollicitudin. Nunc ut eros ac erat euismod pulvinar eu eu eros. Curabitur a scelerisque nunc. Phasellus vel volutpat nulla.
+While in this week I haven't done any actual work on the game itself I planned out every step which I should take to make the whole game. I haven't finished all the documents, only started them to have a general idea. I will improve on the documents over the coming weeks to make them better which will make the whole process easier and better.
