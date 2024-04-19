@@ -7,7 +7,9 @@ import Layout from "./Layout.astro";
   <h1>{frontmatter.title}</h1>
   <p>Written by {frontmatter.author}</p>
   <hr />
-  <slot />
+  <div id="post-content">
+    <slot />
+  </div>
   <br />
 </Layout>
 
@@ -21,6 +23,10 @@ import Layout from "./Layout.astro";
     padding-bottom: 10px;
   }
   hr {
-    margin: 2rem 0;
+    margin: 2rem 300px;
+  }
+
+  #post-content {
+    margin: 0 300px;
   }
 </style>
