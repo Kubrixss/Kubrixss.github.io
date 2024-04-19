@@ -9,13 +9,12 @@ link: https://tylerguy.itch.io/
 trailer: https://www.youtube.com/watch?v=9bZkp7q19f0
 roles:
   - Game Design
-  - Programming
-  - Art
-engine: Unity
+  - Level Design
+engine: Unreal 4
 platform: PC
 genre:
-  - Action
-  - Adventure
+  - Horror
+  - Singleplayer
 screenshots:
   - url: https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640
     alt: The full Astro logo.
