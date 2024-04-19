@@ -8,6 +8,8 @@ image:
 ---
 In the first week of making the FMP the most important part is the documentation of everything. In the first week I have focused on making the GDD, Risk Management and Planning. All of these documents are extremely important to making the actual game as they will help me manage and make the whole process easier.
 
+![image info](https://kubrixss.github.io/public/favicon.svg)
+
 Firstly I have written some of the GDD so that I have a general idea of what type of game I want to make and that I have a basis of things in which I can put into the risks and planning documents. I spent quite a lot of the time making the GDD and making sure all the ideas are solid and would work. As this document will be one of the most important as that's where the whole idea and the game will be written in.
 
 The next document I started making was the Planning trying to plan out in which order I would make my game to make the whole process of making it smoother instead of doing anything at any time without any thought. This document would also allow me to think of how long certain things should take me and take my time into confederation to have a successful game where it's not rushed and everything is planned out.
