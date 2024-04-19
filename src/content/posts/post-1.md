@@ -1,6 +1,6 @@
 ---
 pubDate: 16-04-2024
-title: First Blog Post
+title: Week 1
 author: Jakub M
 image:
   url: /posts/Bingus_Hi.png
