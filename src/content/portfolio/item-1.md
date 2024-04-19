@@ -1,7 +1,7 @@
 ---
 title: Penguin Game
 description: A Horror Game where you collected plushies while escaping the monster.
-date_created: 2024-04-16
+date_created: 2023-12-13
 image:
   url: https://unsplash.com/photos/8wTPqxlnKM4/download?force=true&w=640
   alt: The full Astro logo.
