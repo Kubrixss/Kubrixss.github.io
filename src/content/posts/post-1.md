@@ -14,4 +14,6 @@ The next document I started making was the Planning trying to plan out in which 
 
 The last document in which I worked on was Risk Management in which I named all the risks that can happen with my game and work where if something did go wrong I had a backup plan in which I can put into action so that no work is lost and I didnt have to go behind schedule. All of these documents are there to make the whole process of when I will start making the game smoother and better in which I should have the least issues possible when doing so. Planning stage is extremely important as it will bring me to the end with a smooth journey.
 
+![image info](https://kubrixss.github.io/Cube.png)
+
 While in this week I haven't done any actual work on the game itself I planned out every step which I should take to make the whole game. I haven't finished all the documents, only started them to have a general idea. I will improve on the documents over the coming weeks to make them better which will make the whole process easier and better.
