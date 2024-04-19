@@ -7,8 +7,8 @@ skills:
   - Photoshop
   - Blender
   - Maya
-  - Substance Painter
   - 3DsMax
+  - Substance Painter
   - HackNPlan
   - GitHub
 Education: "GCSEs in Polish, Mathematics, Combined Science: Trilogy Geography,
