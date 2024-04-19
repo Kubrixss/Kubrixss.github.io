@@ -28,5 +28,11 @@ screenshots:
   - url: /portfolio/Level1 Lib.png
     alt: Level 1 - Library
     description: Level 1 - Library
+  - url: /portfolio/Level2 Storage.png
+    alt: Level 2 - Storage Room
+    description: Level 2 - Storage Room
+  - url: /portfolio/Level2 Win.png
+    alt: Level 2 - Wine Cellar
+    description: Level 2 - Wine Cellar
 ---
 Scary and Spooky
