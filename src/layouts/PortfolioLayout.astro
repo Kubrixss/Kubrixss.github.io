@@ -35,6 +35,10 @@ if (!frontmatter.engine) {
 if (!frontmatter.link) {
   frontmatter.link = "#";
 }
+
+frontmatter.date_created = new Date(
+  frontmatter.date_created
+).toLocaleDateString();
 ---
 
 <Layout title={frontmatter.title}>
