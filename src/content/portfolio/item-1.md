@@ -6,7 +6,7 @@ image:
   url: /portfolio/PenguinImage.png
   alt: Penguin Monster From The Game.
 link: https://kubrixss.itch.io/penguin-game?secret=4nrXOTwLNVN77kcZd3Wynv7nyA
-trailer: https://www.youtube.com/watch?v=9bZkp7q19f0
+trailer: https://youtu.be/VhnTyIA2oB0
 roles:
   - Game Design
   - Level Design
