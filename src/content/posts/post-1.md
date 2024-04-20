@@ -163,4 +163,4 @@ Then I have adjusted some settings in the player to give the player more Air Con
 
 I have also made it faster to walk with the Grabbable box as everybody has said that it was way too slow when grabbing it and getting it to the place where the player wanted it. I have only made it a little bit faster as when it's too fast there are some issues that pop up.
 
-All of the changes are shipped to [Itch](https://kubrixss.itch.io/magneticpull) where the players can expereince the new changes and play the improved game.
+All of the changes are shipped to [Itch](https://kubrixss.itch.io/magneticpull) where the players can experience the new changes and play the improved game.
