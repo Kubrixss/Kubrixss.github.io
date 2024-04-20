@@ -1,5 +1,5 @@
 ---
-pubDate: 11-04-2024
+pubDate: 2024-04-18
 title: Development, Beta Testing and Feedback
 author: Jakub M
 image:

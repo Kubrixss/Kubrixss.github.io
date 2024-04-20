@@ -9,8 +9,6 @@ content:
         label: Published Date
         description: The date the post was published
         type: date
-        options:
-          format: DD-MM-YYYY
       - name: title
         label: Title
         description: The title of the post
