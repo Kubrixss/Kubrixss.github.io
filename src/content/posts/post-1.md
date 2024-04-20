@@ -30,6 +30,6 @@ Overall I am quite happy with the feedback I have gotten and the reception to th
 
 As I am getting close to the end of my development of the game I am making final little adjustments to the game to make it run and feel better. I have optimed the game a lot since the Beta Testing, making it way less laggy and added new and improved textures to certain objects like the doors. Made several adjustments to the puzzle mechanics to make them smoother by adjusting the range and the cooldowns of certain things which made the puzzles a bit clunky before.
 
-![image info](https://kubrixss.github.io/posts/Door.png)
+![image info](https://kubrixss.github.io/posts/Door2.png)
 
 All of the changes are shipped to [Itch](https://kubrixss.itch.io/magneticpull) where the players can experience the new changes and play the improved game.
