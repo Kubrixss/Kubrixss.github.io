@@ -1,6 +1,6 @@
 ---
-pubDate: 16-04-2024
-title: Week 1
+pubDate: 11-04-2024
+title: Beta Testing Feedback Blog
 author: Jakub M
 image:
   url: /posts/Bingus_Hi.png
