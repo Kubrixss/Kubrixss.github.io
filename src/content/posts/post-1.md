@@ -20,7 +20,7 @@ There were a lot of interesting pieces of feedback which I have received from th
 
 Few of the testers in feedback have suggested to colour code the areas which was a quite smart idea as it will give people an idea which area they are in and where the puzzles connect to at least in what area they do something in. I had 4 Sections in Area 3 in which I made them Purple, Red, Blue and lastly Green for the middle area where it connects the other 3.
 
-![image info](https://kubrixss.github.io/posts/PurpleIsland1.png)
+![image info](https://kubrixss.github.io/posts/AllChanges.png)
 
 To try to solve the issue of people not knowing what the pressure plates connect to I have added floating crystals next to the pressure plates which change colour when activated to show that they are activated and on. I tried my hardest to make it so that a 2nd crystal is visible from the same spot to show where it is connecting and what/where it may affect something that the player has activated. The 2 crystals connecting should most of the time have line of sight to each other for visual clarity which is very important.
 
