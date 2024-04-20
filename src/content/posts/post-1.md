@@ -12,7 +12,7 @@ Through the development I have struggled a lot with BluePrinting as it's somethi
 
 When it came to the schedule I have made I went very ahead of it by multiple days which allowed me to make and do things which I haven't included in it. By adding convenient features and playing around and learning how to make cool and interesting materials and VFXs for my game which I did a lot early on and only used it on the last few weeks with some adjustments.
 
-In the last 2 weeks I had Beta testing where 26 People have tested my game and gave feedback about it. I have also timed how long it takes people to finish it with an average of 32 minutes to finish the game. I did a table calculating the average times between testers who play puzzle games and testers who dont which There was a 3 minute difference which isn't that big meaning everybody can play and enjoy the game.
+In the last 2 weeks I had Beta testing where 26 People have tested my game and gave feedback about it. I have also timed how long it takes people to finish it with an average of 32 minutes to finish the game. I did a table calculating the average times between testers who play puzzle games and testers who dont which There was a 3 minute difference which isn't that big meaning everybody can play and enjoy the game. ![image info](https://kubrixss.github.io/posts/Times.png)
 
 There were a lot of interesting pieces of feedback which I have received from the survey I have sent out.to the testers. A lot of people have found Area 3 extremely confusing and hard to navigate. The issue a lot of the testers pointed out is that they didnt know which puzzle they were doing and didn't know what connected it to what with the pressure plates.
 
