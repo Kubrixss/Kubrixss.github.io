@@ -13,7 +13,7 @@ import Layout from "./Layout.astro";
   <br />
 </Layout>
 
-<style>
+<style is:global>
   h1 {
     text-align: center;
   }
@@ -26,7 +26,10 @@ import Layout from "./Layout.astro";
     margin: 2rem 300px;
   }
 
+  img {
+    max-width: 100%;
+  }
   #post-content {
-    margin: 0 300px;
+    margin: 0 325px;
   }
 </style>
