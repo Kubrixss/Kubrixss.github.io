@@ -7,14 +7,11 @@ image:
   alt: Penguin Monster From The Game.
 link: https://kubrixss.itch.io/penguin-game?secret=4nrXOTwLNVN77kcZd3Wynv7nyA
 trailer: https://www.youtube.com/watch?v=VhnTyIA2oB0
-roles:
-  - Game Design
-  - Level Design
 engine: Unreal 4
 platform: PC
 genre:
-  - Horror
-  - Singleplayer
+  - genre: Horror
+  - genre: Singleplayer
 screenshots:
   - url: /portfolio/Menu.png
     alt: Menu
