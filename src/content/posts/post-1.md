@@ -26,6 +26,8 @@ To try to solve the issue of people not knowing what the pressure plates connect
 
 Another thing which I did to the crystals to make it even more obvious to what they connect to is I made them all different colours depending on what they connect to. As there were multiple crystals in One of the Areas which at a certain point wasn't obvious which one connected to what so I colour coded them to make it more obvious.
 
+![image info](https://kubrixss.github.io/posts/BlueIsland.png)
+
 Overall I am quite happy with the feedback I have gotten and the reception to the game being quite positive with a lot of the testers callining fun and enjoyable which was my biggest concern. A lot of the testers also have called the game too easy and wanted more challenging content which is quite understandable and this specific feedback makes me quite happy as it means the testers wanted play more of the game and have something more challenging meaning if I did add more levels which were harder they would be happy to play more and challenge themselves.
 
 As I am getting close to the end of my development of the game I am making final little adjustments to the game to make it run and feel better. I have optimed the game a lot since the Beta Testing, making it way less laggy and added new and improved textures to certain objects like the doors. Made several adjustments to the puzzle mechanics to make them smoother by adjusting the range and the cooldowns of certain things which made the puzzles a bit clunky before.
