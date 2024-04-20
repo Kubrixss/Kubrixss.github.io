@@ -1,6 +1,6 @@
 ---
 pubDate: 11-04-2024
-title: Beta Testing Feedback Blog
+title: Development, Beta Testing and Feedback
 author: Jakub M
 image:
   url: /posts/Blog1.png
