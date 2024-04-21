@@ -87,7 +87,7 @@ content:
       - name: roles
         label: Roles
         description: The roles you had during the project
-        type: object
+        type: text
         list: true
         fields:
           - name: role
@@ -133,7 +133,7 @@ content:
           - name: description
             label: Description
             description: The description of the screenshot
-            type: text
+            type: richtext
   - name: about
     label: About
     path: src/content/about/about.md
