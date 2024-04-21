@@ -13,8 +13,8 @@ roles:
 engine: Unreal 4
 platform: PC
 genre:
-  - genre: Horror
-  - genre: Singleplayer
+  - Horror
+  - Singleplayer
 screenshots:
   - url: /portfolio/Menu.png
     alt: Menu
