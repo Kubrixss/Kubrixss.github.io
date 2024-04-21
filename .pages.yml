@@ -105,7 +105,7 @@ content:
       - name: genre
         label: Genres
         description: The genres of the project
-        type: object
+        type: text
         list: true
         fields:
           - name: genre
