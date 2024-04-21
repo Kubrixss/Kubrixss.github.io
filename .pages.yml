@@ -16,7 +16,7 @@ content:
       - name: body
         label: Body
         description: The body of the post
-        type: text
+        type: rich-text
       - name: author
         label: Author
         description: The author of the post
@@ -50,11 +50,11 @@ content:
       - name: description
         label: Description
         description: The description of the portfolio item
-        type: text
+        type: rich-text
       - name: body
         label: Body
         description: The body of the portfolio item
-        type: text
+        type: rich-text
       - name: date_created
         label: Date Created
         description: The date the portfolio item was created
@@ -133,7 +133,7 @@ content:
           - name: description
             label: Description
             description: The description of the screenshot
-            type: rich-text
+            type: text
   - name: about
     label: About
     path: src/content/about/about.md
@@ -146,7 +146,7 @@ content:
       - name: body
         label: Body
         description: The body of the about page
-        type: text
+        type: rich-text
       - name: skills
         label: Skills
         description: The skills of the about page
@@ -160,4 +160,4 @@ content:
       - name: Education
         label: Education
         description: The education of the about page
-        type: text
+        type: rich-text
