@@ -10,7 +10,7 @@ if (!frontmatter.trailer) {
 if (!frontmatter.roles) {
   frontmatter.roles = ["Unknown"];
 } else {
-  // frontmatter.roles = frontmatter.roles.join(", ");
+  frontmatter.roles = frontmatter.roles.join(", ");
 }
 if (!frontmatter.screenshots) {
   frontmatter.screenshots = [
@@ -39,7 +39,7 @@ if (!frontmatter.link) {
 if (!frontmatter.genres) {
   frontmatter.genre = "Unknown";
 } else {
-  // frontmatter.genre = frontmatter.genre.join(", ");
+  frontmatter.genre = frontmatter.genre.join(", ");
 }
 
 frontmatter.date_created = new Date(
