@@ -44,7 +44,11 @@ if (!frontmatter.genre) {
 
 frontmatter.date_created = new Date(
   frontmatter.date_created
-).toLocaleDateString();
+).toLocaleDateString("en-gb", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <Layout title={frontmatter.title}>
