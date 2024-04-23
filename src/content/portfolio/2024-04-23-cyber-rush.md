@@ -18,8 +18,6 @@ genre:
   - FPS
 screenshots:
   - url: /portfolio/ss_bc1e65605f970e8e8c54040c2ce795c01d5a8367.1920x1080.jpg
-    alt: Tutorial Level
-    description: Tutorial Level
   - url: /portfolio/ss_2089b0927e9b5466b2f9ff5ca70b1690d897a7e0.1920x1080.jpg
   - url: /portfolio/ss_3da78851398499b9dca68bf8e266b2cf65a515e1.1920x1080.jpg
   - url: /portfolio/ss_4d4b129546d774706becf00deda1e4ee9b7b5171.1920x1080.jpg
