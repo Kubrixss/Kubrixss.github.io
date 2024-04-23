@@ -6,7 +6,7 @@ image:
   url: /portfolio/CyberRush.png
   alt: Cyber Rush Picture
 link: https://store.steampowered.com/app/2735020/Cyber_Rush/
-trailer: https://youtu.be/BAXo5hgf6OM
+trailer: https://www.youtube.com/watch?v=BAXo5hgf6OM
 roles:
   - Level Designer
 engine: Unreal 4
