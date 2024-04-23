@@ -24,4 +24,6 @@ screenshots:
   - url: /portfolio/ss_a2749240f3afa73990bd2ef5a45710b031db5395.1920x1080.jpg
   - url: /portfolio/ss_ba2fd5aea82806095c9e9454a80c3ab8b85475bc.1920x1080.jpg
 ---
-Welcome to the adrenaline-fueled world of Cyber Rush, a fast-paced Rogue-Like FPS set in a dystopian future where survival is the ultimate goal. Dive into procedurally generated levels filled with relentless enemies, powerful bosses, and a vast array of futuristic weaponry to clear as many rooms as you possibly can!
+Welcome to the adrenaline-fueled world of Cyber Rush, a fast-paced Rogue-Like FPS set in a dystopian future where survival is the ultimate goal. Dive into procedurally generated levels filled with relentless enemies, powerful bosses, and a vast array of futuristic weaponry to clear as many rooms as you possibly can!  
+  
+This Project was part of being a studio where I had the abilitiy to learn how to work and communicate with others in the same studio to make a game. This game me a lot of experience and now am pretty confident in working with multiple people on a project or be in a big studio of people.
