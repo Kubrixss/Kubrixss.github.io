@@ -50,15 +50,21 @@ frontmatter.date_created = new Date(
 <Layout title={frontmatter.title}>
   <div class="header">
     <h1>{frontmatter.title}</h1>
-    <iframe
-      width="560"
-      height="315"
-      src={frontmatter.trailer}
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen></iframe>
+    <div id="header-grid">
+      <div id="description">
+        <h3>{frontmatter.description}</h3>
+        <slot />
+      </div>
+      <iframe
+        width="560"
+        height="315"
+        src={frontmatter.trailer}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
     <a href={frontmatter.link}>Download Here</a>
   </div>
   <div class="content">
@@ -83,10 +89,6 @@ frontmatter.date_created = new Date(
       <p>{frontmatter.genre}</p>
     </div>
   </div>
-  <h2>Description</h2>
-
-  <slot />
-  <!-- add a line seperator -->
   <hr />
   <div id="gallery">
     <h2>Screenshots</h2>
@@ -183,6 +185,12 @@ frontmatter.date_created = new Date(
     margin: 0 5rem;
   }
 
+  #header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 5rem;
+  }
   #screenshot {
     display: flex;
     flex-direction: column;
