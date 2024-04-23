@@ -10,7 +10,7 @@ if (!frontmatter.trailer) {
 if (!frontmatter.roles) {
   frontmatter.roles = ["Unknown"];
 } else {
-  frontmatter.roles = frontmatter.roles.join(", ");
+  // frontmatter.roles = frontmatter.roles.join(", ");
 }
 if (!frontmatter.screenshots) {
   frontmatter.screenshots = [
@@ -34,6 +34,12 @@ if (!frontmatter.engine) {
 }
 if (!frontmatter.link) {
   frontmatter.link = "#";
+}
+
+if (!frontmatter.genres) {
+  frontmatter.genre = "Unknown";
+} else {
+  // frontmatter.genre = frontmatter.genre.join(", ");
 }
 
 frontmatter.date_created = new Date(
@@ -72,6 +78,10 @@ frontmatter.date_created = new Date(
       <p id="heading">Engine</p>
       <p>{frontmatter.engine}</p>
     </div>
+    <div id="genres">
+      <p id="heading">Genres</p>
+      <p>{frontmatter.genre}</p>
+    </div>
   </div>
   <h2>Description</h2>
 
@@ -96,11 +106,11 @@ frontmatter.date_created = new Date(
 <hr id="end" />
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-* {
-font-family: "Shantell Sans", cursive;
-}
+  * {
+    font-family: "Shantell Sans", cursive;
+  }
 
   .header {
     text-align: center;
@@ -186,5 +196,10 @@ font-family: "Shantell Sans", cursive;
 
   #end {
     margin-bottom: 2rem;
+  }
+
+  /* make the date div twice the width of the other grid elements */
+  #date {
+    grid-column: span 2;
   }
 </style>
