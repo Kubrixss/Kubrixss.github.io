@@ -6,22 +6,24 @@ const allPosts = await getCollection("posts");
 ---
 
 <Layout title="Blog">
-  <h1>Blog</h1>
-  <div id="posts">
-    {
-      allPosts.map((post) => (
-        <div
-          id="card"
-          onclick={`location.href='/posts/${post.slug}'`}
-          style="cursor: pointer;"
-        >
-          <img src={post.data.image.url} alt={post.data.image.alt} />
-          <h2>{post.data.title}</h2>
-        </div>
-      ))
-    }
-  </div>
-</Layout>
+  <main>
+    <h1>Blog</h1>
+    <div id="posts">
+      {
+        allPosts.map((post) => (
+          <div
+            id="card"
+            onclick={`location.href='/posts/${post.slug}'`}
+            style="cursor: pointer;"
+          >
+            <img src={post.data.image.url} alt={post.data.image.alt} />
+            <h2>{post.data.title}</h2>
+          </div>
+        ))
+      }
+    </div>
+  </main></Layout
+>
 
 <style>
   #posts {
@@ -31,6 +33,10 @@ const allPosts = await getCollection("posts");
     grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
     margin: 0px 200px 0 200px;
     padding: 20px;
+  }
+
+  body {
+    background: #13151a;
   }
   #card {
     margin: 1rem;
@@ -59,5 +65,11 @@ const allPosts = await getCollection("posts");
   h1 {
     color: #fff;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  main {
+    background-color: black;
   }
 </style>

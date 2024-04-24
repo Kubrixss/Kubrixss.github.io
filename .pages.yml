@@ -183,6 +183,8 @@ content:
         label: CV
         description: The CV of the site
         type: image
+        extensions:
+          - pdf
         options:
           input: public/content
           output: /content

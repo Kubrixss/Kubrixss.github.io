@@ -5,21 +5,23 @@ import { frontmatter as aboutFrontmatter } from "../content/about/about.md";
 ---
 
 <Layout title="About">
-  <h1>About Me</h1>
-  <h2>Summary</h2>
-  <AboutContent />
-  <div id="grid">
-    <div id="card">
-      <h3>Skills</h3>
-      <p>
-        {aboutFrontmatter.skills.join(", ")}
-      </p>
+  <main>
+    <h1>About Me</h1>
+    <h2>Summary</h2>
+    <AboutContent />
+    <div id="grid">
+      <div id="card">
+        <h3>Skills</h3>
+        <p>
+          {aboutFrontmatter.skills.join(", ")}
+        </p>
+      </div>
+      <div id="card">
+        <h3>Education</h3>
+        <p>{aboutFrontmatter.Education}</p>
+      </div>
     </div>
-    <div id="card">
-      <h3>Education</h3>
-      <p>{aboutFrontmatter.Education}</p>
-    </div>
-  </div>
+  </main>
 </Layout>
 
 <style>
@@ -40,10 +42,16 @@ import { frontmatter as aboutFrontmatter } from "../content/about/about.md";
 
   h1 {
     text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
   }
 
   h2 {
     margin-top: 2rem;
     text-align: center;
+  }
+
+  main {
+    background-color: black;
   }
 </style>
