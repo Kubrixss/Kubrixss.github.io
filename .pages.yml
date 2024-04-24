@@ -176,6 +176,6 @@ content:
         description: The icon of the site
         type: image
         options:
-          input: public
-          output:
-          path: public
+          input: public/content
+          output: /content
+          path: public/content
