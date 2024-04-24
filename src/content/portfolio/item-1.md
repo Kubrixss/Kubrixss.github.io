@@ -38,4 +38,6 @@ screenshots:
     alt: Level 2 - Collectible Plush
     description: Level 2 - Collectible Plush
 ---
-[ Not Finished ]
+A game where you are a little child who is running from their fears in a nightmare. Walk thourgh maze like house layouts from the childs memory to collect plushies of a penguin to be able to escape and wake up. 2 Levels of a house level and a basment level with the 2nd level being way larger.
+
+In this Project I have worked with 2 other people. I have taken the lead as the main designer who designed the whole game and all the mechanics and the Level Designer where I have made all the layouts and decorated them myself.
