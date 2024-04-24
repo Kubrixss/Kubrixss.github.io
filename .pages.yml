@@ -166,16 +166,16 @@ content:
     path: src/config.json
     type: file
     format: json
-    fields: 
-    - name: title
-      label: Title
-      description: The title of the site
-      type: text
-    - name: icon
-      label: Icon
-      description: The icon of the site
-      type: image
-      options:
-        input: public
-        output: /
-        path: public
+    fields:
+      - name: title
+        label: Title
+        description: The title of the site
+        type: text
+      - name: icon
+        label: Icon
+        description: The icon of the site
+        type: image
+        options:
+          input: public
+          output: .
+          path: public
