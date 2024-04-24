@@ -166,6 +166,7 @@ content:
     path: src/config.json
     type: file
     format: json
+    fields: 
     - name: title
       label: Title
       description: The title of the site
