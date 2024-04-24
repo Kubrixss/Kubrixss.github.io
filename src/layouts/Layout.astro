@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
-const { title } = Astro.props;
+import config from "../config.json";
+const { icon, title } = config;
 import { ViewTransitions } from "astro:transitions";
 ---
 
@@ -10,13 +11,13 @@ import { ViewTransitions } from "astro:transitions";
     <meta charset="UTF-8" />
     <meta name="description" content="Projects | Kubrixss" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={icon} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
   </head>
   <body>
-    <Header title="Jakub Muszynski" />
+    <Header title={title} />
     <slot />
     <style is:global>
       @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
