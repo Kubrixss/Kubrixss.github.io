@@ -1,13 +1,21 @@
 ---
 interface Props {
   title: string;
+  icon: string;
 }
 
 const { title } = Astro.props;
+import config from "../config.json";
+const { icon } = config;
 ---
 
 <div id="header">
-  <h1>{title}</h1>
+  <div id="logo">
+    <img src={icon} alt="Google Logo" />
+    <h1>{title}</h1>
+    <div style="opacity: 0"></div>
+  </div>
+
   <div id="nav">
     <ul>
       <li><a href="/"> Home</a></li>
@@ -17,7 +25,7 @@ const { title } = Astro.props;
   </div>
 
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     h1 {
       color: white;
       font-family: "Shantell Sans", cursive;
@@ -64,6 +72,20 @@ const { title } = Astro.props;
 
     #nav li {
       list-style-type: none;
+    }
+
+    /* positon the logo to the left and the title to the center */
+    #logo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+    }
+
+    #logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 10px;
     }
   </style>
 </div>

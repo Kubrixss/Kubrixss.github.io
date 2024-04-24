@@ -161,3 +161,21 @@ content:
         label: Education
         description: The education of the about page
         type: rich-text
+  - name: config
+    label: Config
+    path: src/config.json
+    type: file
+    format: json
+    - name: title
+      label: Title
+      description: The title of the site
+      type: text
+    - name: icon
+      label: Icon
+      description: The icon of the site
+      type: image
+      options:
+        input: public
+        output: /
+        path: public
+    - file
