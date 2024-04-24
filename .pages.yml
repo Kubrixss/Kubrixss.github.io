@@ -179,10 +179,10 @@ content:
         label: LinkedIn
         description: The LinkedIn of the site
         type: text
-      - cv:
+      - name: cv
         label: CV
         description: The CV of the site
-        type: file
+        type: image
         options:
           input: public/content
           output: /content
