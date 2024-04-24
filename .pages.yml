@@ -179,4 +179,3 @@ content:
         input: public
         output: /
         path: public
-    - file
