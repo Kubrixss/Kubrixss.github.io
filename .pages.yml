@@ -183,12 +183,11 @@ content:
         label: CV
         description: The CV of the site
         type: image
-        extensions:
-          - pdf
         options:
           input: public/content
           output: /content
           path: public/content
+          categories: document
       - name: icon
         label: Icon
         description: The icon of the site
