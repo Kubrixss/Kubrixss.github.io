@@ -171,6 +171,22 @@ content:
         label: Title
         description: The title of the site
         type: text
+      - name: email
+        label: Email
+        description: The email of the site
+        type: text
+      - name: linkedin
+        label: LinkedIn
+        description: The LinkedIn of the site
+        type: text
+      - cv:
+        label: CV
+        description: The CV of the site
+        type: file
+        options:
+          input: public/content
+          output: /content
+          path: public/content
       - name: icon
         label: Icon
         description: The icon of the site

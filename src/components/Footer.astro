@@ -1,0 +1,35 @@
+---
+import config from "../config.json";
+const { email, cv, linkedin } = config;
+---
+
+<div id="footer">
+  <div id="footer-links">
+    <a href="${cv}" target="_blank">CV</a>
+    <a href="${linkedin}" target="_blank">LinkedIn</a>
+    <a href="mailto:${email}">Email</a>
+  </div>
+</div>
+
+<style>
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #000000;
+    box-shadow: 0px -5px 5px 0px #27272788;
+  }
+
+  #footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+  }
+
+  #footer-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+</style>
