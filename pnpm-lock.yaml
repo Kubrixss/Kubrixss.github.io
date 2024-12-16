@@ -14,6 +14,9 @@ importers:
       astro-remark-eleventy-image:
         specifier: ^2.0.1
         version: 2.0.1
+      view-transitions-polyfill:
+        specifier: ^1.0.3
+        version: 1.0.3
 
 packages:
 
@@ -1871,6 +1874,9 @@ packages:
 
   vfile@6.0.1:
     resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+
+  view-transitions-polyfill@1.0.3:
+    resolution: {integrity: sha512-o7tiNKAsuqvL0u4Epo/jrSOx7qy1/KH3ajzHsY0GU4zWIOiiC6Pyczyf6QgJneyFKlu8QdcMeCQocUl94R+fvA==}
 
   vite@5.3.1:
     resolution: {integrity: sha512-XBmSKRLXLxiaPYamLv3/hnP/KXDai1NDexN0FpkTaZXTfycHvkRHoenpgl/fvuK/kPbB6xAgoyiryAhQNxYmAQ==}
@@ -4195,6 +4201,8 @@ snapshots:
       '@types/unist': 3.0.2
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
+
+  view-transitions-polyfill@1.0.3: {}
 
   vite@5.3.1(@types/node@20.14.6):
     dependencies:
