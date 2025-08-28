@@ -201,7 +201,7 @@ content:
     path: src/content/cv/cv.md
     type: file
     fields:
-      - name: summary
+      - name: body
         label: Summary
         description: The summary of the CV
         type: rich-text
