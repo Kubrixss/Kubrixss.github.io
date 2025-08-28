@@ -227,7 +227,6 @@ content:
         label: Hobbies
         description: Interests and hobbies
         type: rich-text
-        list: true
       - name: languages
         label: Languages
         description: Languages
