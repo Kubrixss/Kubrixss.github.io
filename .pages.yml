@@ -196,3 +196,52 @@ content:
           input: public/content
           output: /content
           path: public/content
+  - name: cv
+    label: CV
+    path: src/content/cv/cv.md
+    type: file
+    fields:
+      - name: summary
+        label: Summary
+        description: The summary of the CV
+        type: rich-text
+      - name: education
+        label: Education
+        description: The education of the CV
+        type: rich-text
+      - name: experience
+        label: Experience
+        description: The experience of the CV
+        type: rich-text
+      - name: skills
+        label: Skills
+        description: The skills of the CV
+        type: text
+        list: true
+        fields:
+          - name: skill
+            label: Skill
+            description: The skill
+            type: text
+      - name: hobbies
+        label: Hobbies
+        description: Interests and hobbies
+        type: text
+        list: true
+        fields:
+          - name: hobby
+            label: Hobby
+            description: The hobby/interest
+            type: text
+      - name: languages
+        label: Languages
+        description: Languages
+        type: text
+        list: true
+        fields:
+          - name: language
+            label: Language
+            description: The language
+            type: text
+
+    
