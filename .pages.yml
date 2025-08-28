@@ -226,13 +226,8 @@ content:
       - name: hobbies
         label: Hobbies
         description: Interests and hobbies
-        type: text
+        type: rich-text
         list: true
-        fields:
-          - name: hobby
-            label: Hobby
-            description: The hobby/interest
-            type: text
       - name: languages
         label: Languages
         description: Languages

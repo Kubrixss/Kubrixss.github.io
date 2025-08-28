@@ -28,7 +28,7 @@ experience: |-
 
   March 2020 - March 2020
 
-  Putting together computers/laptops from scrapped parts.
+  *   Putting together computers/laptops from scrapped parts.
 
   *   Installing OS
       
@@ -42,10 +42,10 @@ skills:
   - 3DsMax
   - Maya
   - Substance Painter
-hobbies:
-  - "I like playing games and I like to play competitively, meaning I like to
+hobbies: |-
+   I like playing games and I like to play competitively, meaning I like to
     reach the top and I like to know everything to be the most efficient. In my
-    free time I love to design games and make them. "
+    free time I love to design games and make them.
 languages:
   - English
   - Polish

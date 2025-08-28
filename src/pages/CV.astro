@@ -1,3 +1,9 @@
+---
+import {Content as CVContent} from '../content/cv/cv.md'
+import {frontmatter as CVFrontmatter} from '../content/cv/cv.md'
+import { Markdown } from '@astropub/md'
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,22 +28,19 @@
           <section id="skills">
             <h2>Skills</h2>
             <ul>
-              <li>Unreal 4</li>
-              <li>Unreal 5</li>
-              <li>Photoshop</li>
-              <li>Unity Engine</li>
-              <li>Blender</li>
-              <li>3DsMax</li>
-              <li>Maya</li>
-              <li>Substance Painter</li>
+              <!-- add skills to list -->
+               {CVFrontmatter.skills.map(skill => (
+                <li>{skill}</li>
+              ))}
             </ul>
           </section>
 
           <section id="languages">
             <h2>Languages</h2>
             <ul>
-              <li>English</li>
-              <li>Polish</li>
+              {CVFrontmatter.languages.map(language => (
+                <li>{language}</li>
+              ))}
             </ul>
           </section>
         </aside>
@@ -45,17 +48,12 @@
         <main class="main-content">
           <section id="summary">
             <h2>Summary</h2>
-            <p>
-              I am confident and hard working with great communication skills. I
-              am also capable of working in a group or alone. I am a quick
-              learner and always willing to learn new skills. Always punctual
-              and organized when working. I am a competitive person, meaning I
-              always try to be the best and try my hardest.
-            </p>
+            <CVContent/>
           </section>
           <section id="education">
             <h2>Education</h2>
-            <h3>Game Design, Southampton Solent University (2021 - 2024)</h3>
+            <Markdown of={CVFrontmatter.education}/>
+            <!-- <h3>Game Design, Southampton Solent University (2021 - 2024)</h3>
             <ul>
                 <li>Bachelor of Arts Computer Games (Design) - First Class Honours</li>
             </ul> 
@@ -76,27 +74,30 @@
               <li>Maths - 5</li>
               <li>Geography - 4</li>
               <li>English - 4</li>
-            </ul>
+            </ul> -->
           </section>
 
           <section id="experience">
-            <h2>Work Experience</h2>
-            <h3>Jamie's computers (Freelance)</h3>
+           
+             <h2>Work Experience</h2>
+             <Markdown of={CVFrontmatter.experience}/>
+            <!--<h3>Jamie's computers (Freelance)</h3>
             <p>March 2020 - March 2020</p>
             <p>Putting together computers/laptops from scrapped parts.</p>
             <ul>
               <li>Installing OS</li>
               <li>Cleaning Computers</li>
-            </ul>
+            </ul> -->
           </section>
 
           <section id="interests">
             <h2>Interests and Hobbies</h2>
-            <p>
+            <Markdown of={CVFrontmatter.hobbies}/>
+            <!-- <p>
               I like playing games and I like to play competitively, meaning I
               like to reach the top and I like to know everything to be the most
               efficient. In my free time I love to design games and make them.
-            </p>
+            </p> -->
           </section>
         </main>
       </div>
