@@ -23,7 +23,7 @@ education: |-
       
   *   English - 4
 experience: >-
-  Jamie's computers (Freelance) 2020-03/2020-03
+  **Jamie's computers (Freelance) 2020-03/2020-03**
 
 
   *   Putting together computers/laptops from scrapped parts.
@@ -33,14 +33,14 @@ experience: >-
   *   Cleaning Computers
       
 
-  Infinite Realms Studio 2023-09/2024-01
+  **Infinite Realms Studio 2023-09/2024-01**
 
 
   *   I worked as the main level designer on a roguelike first person shooter. I
   designed the maps for the game.
       
 
-  Thunder Blossom Studio 2023-01/2023-05
+  **Thunder Blossom Studio 2023-01/2023-05**
 
 
   *   I worked as the main game designer on a multiplayer car battle game
