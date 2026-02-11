@@ -6,6 +6,8 @@ image:
   url: /public/78zgZDN0by2NnyH69_z7OML58UDvDjxFPuxCpvgKvA5iW2mwfDx9p_78SrD90LWXhXmgd3DnfIxtqGhfw9Fzgw.webp
 link: https://play.google.com/store/apps/details?id=com.vuvumo.stealthgame
 trailer: https://www.youtube.com/watch?v=ga8uvU3sAeQ
+roles:
+  - Game Designer
 engine: Unreal 5
 platform: Mobile
 genre:
