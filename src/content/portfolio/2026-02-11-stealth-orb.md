@@ -1,5 +1,5 @@
 ---
-title: Stealth Orb
+title: StealthOrb
 description: Top Down Stealth Game about a Orb.
 date_created: 2025-10-13
 image:
