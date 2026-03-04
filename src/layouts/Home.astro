@@ -43,23 +43,19 @@ const allPosts = await getCollection("portfolio");
   }
 
   #container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  min-height: 100%;
-  align-content: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    align-content: center;
+    justify-content: center;
   }
 
   #projects {
-    display: grid;
-    column-gap: 50px;
-    row-gap: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
-    margin: 0px 200px 0 200px;
-    padding: 20px;
+    display: flex;
+    margin: 0 100px;
   }
 
   #card {
