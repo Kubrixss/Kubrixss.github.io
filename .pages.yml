@@ -1,4 +1,19 @@
-media: public
+media:
+  - name: posts
+    label: Post Images
+    input: src/assets/posts
+    output: ../../assets/posts
+    extensions: [png, jpg, webp]
+  - name: portfolio
+    label: Portfolio Images
+    input: src/assets/portfolio
+    output: ../../assets/portfolio
+    extensions: [png, jpg, webp]
+  - name: content
+    label: Content Images
+    input: src/assets/content
+    output: ../../assets/content
+    extensions: [png, jpg, webp]
 content:
   - name: posts
     label: Posts
@@ -31,9 +46,8 @@ content:
             description: The source of the image
             type: image
             options:
-              input: public/posts
-              output: /posts
-              path: public
+              media: posts
+              path: src/assets/posts
           - name: alt
             label: Alt
             description: The alt text of the image
@@ -69,9 +83,8 @@ content:
             description: The source of the image
             type: image
             options:
-              input: public/portfolio
-              output: /portfolio
-              path: public
+              media: portfolio
+              path: scr/assets/portfolio
           - name: alt
             label: Alt
             description: The alt text of the image
@@ -123,9 +136,8 @@ content:
             description: The source of the screenshot
             type: image
             options:
-              input: public/portfolio
-              output: /portfolio
-              path: public
+              media: portfolio
+              path: scr/assets/portfolio
           - name: alt
             label: Alt
             description: The alt text of the screenshot
@@ -184,18 +196,17 @@ content:
         description: The CV of the site
         type: image
         options:
-          input: public/content
-          output: /content
-          path: public/content
+          media: content
+          path: src/assets/content
           categories: document
       - name: icon
         label: Icon
         description: The icon of the site
         type: image
         options:
-          input: public/content
-          output: /content
-          path: public/content
+          media: content
+          path: src/assets/content
+          categories: document
   - name: cv
     label: CV
     path: src/content/cv/cv.md
