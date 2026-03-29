@@ -209,7 +209,7 @@ content:
           categories: document
   - name: cv
     label: CV
-    path: src/content/cv/cv.md
+    path: src/pages/cv.md
     type: file
     fields:
       - name: body
