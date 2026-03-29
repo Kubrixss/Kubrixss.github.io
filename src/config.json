@@ -3,5 +3,5 @@
   "email": "kubrixss@gmail.com",
   "linkedin": "https://www.linkedin.com/in/jakub-muszyński-485a1b205",
   "cv": "/content/CV.pdf",
-  "icon": "src/assets/content/Logo.png"
+  "icon": "../assets/content/Logo.png"
 }

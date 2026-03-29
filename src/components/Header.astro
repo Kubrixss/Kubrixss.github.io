@@ -6,11 +6,12 @@ interface Props {
 const { title } = Astro.props;
 import config from "../config.json";
 const { icon } = config;
+import { Image } from "astro:assets";
 ---
 
 <div id="header">
   <div id="logo">
-    <img src={icon} alt="Google Logo" />
+    <Image src={icon} alt="Logo" width={50} height={50} />
     <h1>{title}</h1>
     <div style="opacity: 0"></div>
   </div>
