@@ -38,6 +38,7 @@ const portfolioCollection = defineCollection({
         z.object({
           url: image(),
           alt: z.string().optional(),
+          description: z.string().optional(),
         })
       ),
     }),
