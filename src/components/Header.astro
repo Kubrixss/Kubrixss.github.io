@@ -12,7 +12,7 @@ import Logo from "../assets/content/Logo.png";
 
 <div id="header">
   <div id="logo">
-    <Image src={Logo} alt="Logo" width={50} height={50} />
+    <Image src={Logo} alt="Logo" />
     <h1>{title}</h1>
     <div style="opacity: 0"></div>
   </div>
@@ -81,9 +81,11 @@ import Logo from "../assets/content/Logo.png";
     }
 
     #logo img {
+      max-height: 100px;
       width: auto;
-      max-height: 50px;
       margin-left: 10px;
+      object-fit: contain;
+      aspect-ratio: 1/1;
     }
   </style>
 </div>
