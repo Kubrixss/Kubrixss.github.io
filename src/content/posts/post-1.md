@@ -3,7 +3,7 @@ pubDate: 2024-04-18
 title: Development, Beta Testing and Feedback
 author: Jakub M
 image:
-  url: /posts/Blog1.png
+  url: ../../assets/posts/Blog1.png
   alt: Area 3 Overview
 ---
 Through the past 12 weeks I have been working on a Puzzle game. These types of games are pretty difficult to make as to make fun and engaging puzzles are pretty difficult to design and then make. Throughout the whole process there were many ups and downs which I went through but the end result is even better than I have imagined.

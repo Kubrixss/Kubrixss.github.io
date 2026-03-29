@@ -1,15 +1,9 @@
 import { defineConfig } from 'astro/config';
-
-import remarkEleventyImage from "astro-remark-eleventy-image";
+import markdownIntegration from '@astropub/md'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://Kubrixss.github.io',
-  integrations: [remarkEleventyImage()],
-  vite: {
-    ssr: {
-      external: ["@11ty/eleventy-img"],
-    },
-}
-  
+  integrations: [],
+
 });

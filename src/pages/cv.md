@@ -1,4 +1,5 @@
 ---
+layout: ../layouts/CV.astro
 education: |-
   ### Game Design, Southampton Solent University (2021 - 2024)
 

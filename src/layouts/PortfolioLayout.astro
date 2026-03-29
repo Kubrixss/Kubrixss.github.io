@@ -1,15 +1,14 @@
 ---
 const { frontmatter } = Astro.props;
 import Layout from "./Layout.astro";
-if (!frontmatter.trailer) {
-  frontmatter.trailer = "https://www.youtube.com/embed/dQw4w9WgXcQ";
-} else {
+import { Image } from "astro:assets";
+if (frontmatter.trailer) {
   // transform trailer url from https://youtube.com/watch?v=... to https://www.youtube.com/embed/...
   frontmatter.trailer = frontmatter.trailer.replace("watch?v=", "embed/");
 }
 if (!frontmatter.roles) {
-  frontmatter.roles = ["Unknown"];
-} else {
+  frontmatter.roles = "Unknown";
+} else if (Array.isArray(frontmatter.roles)) {
   frontmatter.roles = frontmatter.roles.join(", ");
 }
 if (!frontmatter.screenshots) {
@@ -38,12 +37,12 @@ if (!frontmatter.link) {
 
 if (!frontmatter.genre) {
   frontmatter.genre = "Unknown";
-} else {
+} else if (Array.isArray(frontmatter.genre)) {
   frontmatter.genre = frontmatter.genre.join(", ");
 }
 
 frontmatter.date_created = new Date(
-  frontmatter.date_created
+  frontmatter.date_created,
 ).toLocaleDateString("en-gb", {
   year: "numeric",
   month: "long",
@@ -59,15 +58,17 @@ frontmatter.date_created = new Date(
         <h3>{frontmatter.description}</h3>
         <slot />
       </div>
-      <iframe
-        width="560"
-        height="315"
-        src={frontmatter.trailer}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
+      {frontmatter.trailer && (
+        <iframe
+          width="560"
+          height="315"
+          src={frontmatter.trailer}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      )}
     </div>
     <a href={frontmatter.link}>Download Here</a>
   </div>
@@ -101,7 +102,16 @@ frontmatter.date_created = new Date(
       {
         frontmatter.screenshots.map((screenshot) => (
           <div id="screenshot">
-            <img src={screenshot.url} alt={screenshot.alt} />
+            {typeof screenshot.url === "string" ? (
+              <Image
+                src={screenshot.url}
+                alt={screenshot.alt || ""}
+                width={400}
+                height={400}
+              />
+            ) : (
+              <Image src={screenshot.url} alt={screenshot.alt || ""} />
+            )}
             <p>{screenshot.description}</p>
           </div>
         ))

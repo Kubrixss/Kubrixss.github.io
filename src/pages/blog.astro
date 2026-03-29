@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Image from "astro:assets";
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 const allPosts = await getCollection("posts");
 ---
@@ -13,10 +13,10 @@ const allPosts = await getCollection("posts");
         allPosts.map((post) => (
           <div
             id="card"
-            onclick={`location.href='/posts/${post.slug}'`}
+            onclick={`location.href='/posts/${post.id}'`}
             style="cursor: pointer;"
           >
-            <img src={post.data.image.url} alt={post.data.image.alt} />
+            <Image src={post.data.image.url} alt={post.data.image.alt || ""} />
             <h2>{post.data.title}</h2>
           </div>
         ))

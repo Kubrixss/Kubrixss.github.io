@@ -1,10 +1,8 @@
 ---
-import {Content as CVContent} from '../content/cv/cv.md'
-import {frontmatter as CVFrontmatter} from '../content/cv/cv.md'
-import { Markdown } from '@astropub/md'
+const {frontmatter} = Astro.props;
+import { marked } from 'marked';
 ---
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,8 +26,7 @@ import { Markdown } from '@astropub/md'
           <section id="skills">
             <h2>Skills</h2>
             <ul>
-              <!-- add skills to list -->
-               {CVFrontmatter.skills.map(skill => (
+               {frontmatter.skills.map(skill => (
                 <li>{skill}</li>
               ))}
             </ul>
@@ -38,7 +35,7 @@ import { Markdown } from '@astropub/md'
           <section id="languages">
             <h2>Languages</h2>
             <ul>
-              {CVFrontmatter.languages.map(language => (
+              {frontmatter.languages.map(language => (
                 <li>{language}</li>
               ))}
             </ul>
@@ -48,56 +45,21 @@ import { Markdown } from '@astropub/md'
         <main class="main-content">
           <section id="summary">
             <h2>Summary</h2>
-            <CVContent/>
+            <slot />
           </section>
           <section id="education">
             <h2>Education</h2>
-            <Markdown of={CVFrontmatter.education}/>
-            <!-- <h3>Game Design, Southampton Solent University (2021 - 2024)</h3>
-            <ul>
-                <li>Bachelor of Arts Computer Games (Design) - First Class Honours</li>
-            </ul> 
-            <h3>City College Southampton (2019-2021)</h3>
-            <ul>
-              <li>
-                BTEC Extended Diploma in Creative Digital Media Production - DDM
-              </li>
-              <li>
-                BTEC Foundation Diploma in Creative Digital Media Production -
-                Merit
-              </li>
-            </ul>
-            <h3>Oasis Academy Mayfield (2014-2019)</h3>
-            <ul>
-              <li>Polish - 8</li>
-              <li>Combined Science - 5-5</li>
-              <li>Maths - 5</li>
-              <li>Geography - 4</li>
-              <li>English - 4</li>
-            </ul> -->
+            <div set:html={marked.parse(frontmatter.education)} /> 
           </section>
 
           <section id="experience">
-           
              <h2>Work Experience</h2>
-             <Markdown of={CVFrontmatter.experience}/>
-            <!--<h3>Jamie's computers (Freelance)</h3>
-            <p>March 2020 - March 2020</p>
-            <p>Putting together computers/laptops from scrapped parts.</p>
-            <ul>
-              <li>Installing OS</li>
-              <li>Cleaning Computers</li>
-            </ul> -->
+             <div set:html={marked.parse(frontmatter.experience)} />
           </section>
 
           <section id="interests">
             <h2>Interests and Hobbies</h2>
-            <Markdown of={CVFrontmatter.hobbies}/>
-            <!-- <p>
-              I like playing games and I like to play competitively, meaning I
-              like to reach the top and I like to know everything to be the most
-              efficient. In my free time I love to design games and make them.
-            </p> -->
+            <div set:html={marked.parse(frontmatter.hobbies)} /> 
           </section>
         </main>
       </div>
